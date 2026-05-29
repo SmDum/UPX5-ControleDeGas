@@ -1,50 +1,84 @@
-# Welcome to your Expo app 👋
+# gas-app
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplicativo Expo React Native para controle de gás.
 
-## Get started
+## Visão geral
 
-1. Install dependencies
+Este projeto é um app criado com Expo e Expo Router, usando React Native 0.81.5 e React 19.1.0. O código principal está em `app/`, com roteamento baseado em arquivos.
 
-   ```bash
-   npm install
-   ```
+## Pré-requisitos
 
-2. Start the app
+- Node.js instalado (recomendado 18+)
+- npm
+- Expo CLI não é obrigatório para rodar via `npx`, mas pode ser instalado globalmente
+- Emulador Android / iOS ou dispositivo físico para testar
 
-   ```bash
-   npx expo start
-   ```
+## Instalação
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+No terminal, entre na pasta do app e instale as dependências:
 
 ```bash
-npm run reset-project
+cd c:\Users\Pichau\Desktop\UPX5-ControleDeGas\gas-app
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Como rodar
 
-## Learn more
+### Iniciar o projeto
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+npm run start
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### Abrir em Android
 
-## Join the community
+```bash
+npm run android
+```
 
-Join our community of developers creating universal apps.
+### Abrir em iOS
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+npm run ios
+```
+
+### Abrir na web
+
+```bash
+npm run web
+```
+
+## Scripts úteis
+
+- `npm run start` — inicia o servidor Expo
+- `npm run android` — abre no Android (emulador ou dispositivo)
+- `npm run ios` — abre no iOS Simulator
+- `npm run web` — roda no navegador
+- `npm run lint` — executa o lint do Expo
+- `npm run reset-project` — reseta o projeto para o padrão de inicialização
+
+## Estrutura do projeto
+
+- `app/` — principais telas e rotas do Expo Router
+- `components/` — componentes reutilizáveis
+- `assets/` — imagens e recursos estáticos
+- `scripts/` — utilitários do projeto
+- `package.json` — dependências e scripts
+
+## Dependências principais
+
+- `expo`
+- `expo-router`
+- `react`
+- `react-native`
+- `mqtt`
+
+## Observações
+
+- Se for usar em dispositivo físico, abra o QR code do Expo Go ou configure um build de desenvolvimento.
+- Para desenvolvimento web, use `npm run web`.
+
+## Links úteis
+
+- Expo: https://expo.dev
+- Expo Router: https://docs.expo.dev/router/introduction/
